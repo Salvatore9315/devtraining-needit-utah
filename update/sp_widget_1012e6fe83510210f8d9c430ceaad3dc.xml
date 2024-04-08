@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function(){
+    return{
+      template:  '<div class="col-md-1"><button class="btn btn-danger pull-right" ng-click="c.confirmDelete()"><span class="glyphicon glyphicon-trash"></span></button></div>',
+      restrict: 'E' 
+      
+    };
+  }]]></client_script>
+        <controller_as>c</controller_as>
+        <css>body{
+  background-color: grey;
+  
+}
+h1 {
+color: #428bca;
+  font-size: 45px;
+}
+.ok{
+  color: white;
+  background-color: black;
+}
+
+.blue{
+color:blue;
+  font-size: 15px;
+  background-color:grey;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{
+	"data": {
+		"sometext": "world"
+	}
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>thisisexiting</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>ThisIsExiting</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  /* populate the 'data' object */
+  /* e.g., data.table = $sp.getValue('table'); */
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-04-05 08:37:32</sys_created_on>
+        <sys_id>1012e6fe83510210f8d9c430ceaad3dc</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>ThisIsExiting</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sp_widget_1012e6fe83510210f8d9c430ceaad3dc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-04-05 10:40:30</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-default">
+      <div class="panel-heading clearfix">
+        <h3 class="panel-title pull-left">
+          ${Notes}
+        </h3>
+      </div>
+      <div class="panel-body">
+        <p>
+          <em>Notes list widget</em>
+        </p>
+      </div>
+    </div>]]></template>
+    </sp_widget>
+</record_update>
